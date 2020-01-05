@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/*header*/
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+
+#header .h-top{
+    width: 100%;
+    height: 100px;
+    
+}
+
+#header .h-top .icon{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 50%
+}   
+
+#header .h-top .icon img{
+    left: 150px;
+    top: 25px;
+    line-height: 60px;
+    margin: -30px 0 0;
+    width: 190px;
+    height: 80px;
+}
+
+#header .h-top .icon span{
+    position: absolute;
+    top: 60px;
+    right: 160px;
+    font-size: 25px;
+    font-family:微软雅黑, 黑体;
+    color: rgb(13,177,75);
+}
+
+
+/*content*/
+
+
+#content .input_div{
+    width: 340px;
+    height: 400px;
+    background-color: wheat;
+    position: absolute;
+    right: 160px;
+    top: 35px;
+}
+
+#content .input_div .info-top {
+    background-color: white;
+    height: 60px;
+    /*设置中间竖线的颜色*/
+    color: rgb(13,177,75);
+    border-bottom:1px solid  rgb(13,177,75);
+}
+
+#content .input_div .info-top  button{
+    width: 160px;
+    height: 50px;
+    
+    border: 0;
+    background-color:rgba(0,0,0,0);
+    
+    font-size: 20px;
+    color: rgb(53,53,53);
+}
+
+#content .input_div .info-top  button:focus, #content .input_div .info-top  button:hover{
+    color: rgb(13,177,75);
+    /*按钮和输入框成为焦点后默认的边框，是outline*/
+    outline: none;
+}
+
+
+#content .input_div .info-middle{
+    height: 300px;
+    
+    background-color: white;
+    border-top: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+/*用户名和密码*/
+#content .input_div .info-middle .username, #content .input_div .info-middle .password{
+    background-color: white;
+    width: auto;
+    height: 50px;
+    
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 50px;
+    
+    border:1px solid rgb(180,180,180) ;
+}
+
+#content .input_div .info-middle .password{
+    top: 110px;
+}
+
+#content .input_div .info-middle img{
+    float: left;
+    height: 100%;
+    border:1px solid rgb(180,180,180)
+}
+
+#content .input_div .info-middle input{
+    border: 0;
+    float: left;
+    height: 100%;
+    width: auto;
+    padding-left:10px ;
+}
+
+#content .input_div .info-middle input:focus{
+    outline: none;
+}
+
+
+/*忘记密码*/
+#content .input_div .info-middle a{
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    font-size: 12px;
+    color: rgb(153,153,153);
+}
+
+#content .info-middle a:hover{
+    color: rgb(13,177,75);
+    text-decoration: underline;
+}
+
+#content .info-middle #log{
+    background-color:rgb(13,177,75);
+    font-size: 20px;
+    text-align: center;
+    color: gainsboro;
+    letter-spacing: 23px;
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+#content .info-middle #log span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#content .info-middle #log span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#content .info-middle #log:hover span {
+    padding-right: 25px;
+  }
+  
+#content .info-middle #log:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#content .input_div .info-bottom{
+    height: 50px;
+    background-color: white
+    
+}
+
+
+
+/*设置注册按钮*/
+#content .input_div .info-bottom div {  
+    bottom: 8px;
+    /*left: 111px;*/
+    display: inline;
+}
+
+#content .input_div .info-bottom .login i{
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    border-radius: 50px;
+}
+
+#content .input_div .info-bottom .logon i{
+    background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+#content .input_div .info-bottom .login{
+    position: absolute;
+    left: 12px;
+}
+
+#content .input_div .info-bottom .logon{
+    position: absolute;
+    left: 240px;
+}
+
+#content .input_div .info-bottom div a {
+    color: rgb(153,153,153);
+    display: inline;
+    
+}
+
+#content .input_div .info-bottom div a:hover{
+    color: rgb(13,177,75);
+    text-decoration: underline;
+}
+
+
+/*=====3、footer=====*/
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: rgb(153,153,153);
+    font-size: 12px;
+    text-align: center;
+    top: 5px;
+}
+
+#footer .versions{
+    top: 5px;
+}
+
+#footer .other a{
+    font-size: 12px;
+    color: rgb(153,153,153);
+}
+#footer .other a:hover{
+    font-size: 12px;
+    color: rgb(13,177,75);
+    text-decoration: underline;
+}
+
